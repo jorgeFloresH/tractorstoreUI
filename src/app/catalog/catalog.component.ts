@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ITEMS} from '../shared/items';
+import {Item} from '../shared/item';
 
 @Component({
   selector: 'app-catalog',
@@ -9,7 +10,7 @@ import {ITEMS} from '../shared/items';
 export class CatalogComponent implements OnInit {
 
   items = ITEMS;
-  selectedItem = ITEMS[0];
+  selectedItem: Item;
 
   constructor() {
   }
@@ -17,4 +18,7 @@ export class CatalogComponent implements OnInit {
   ngOnInit() {
   }
 
+  onSelect(item: Item) {
+    this.selectedItem = item;
+  }
 }

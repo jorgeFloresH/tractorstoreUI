@@ -1,4 +1,5 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Item} from '../shared/item';
 
 @Component({
   selector: 'app-item-detail',
@@ -7,6 +8,8 @@ import {Component, OnInit} from '@angular/core';
 })
 export class ItemDetailComponent implements OnInit {
 
+  @Input()
+  item: Item;
   constructor() {
   }
 
