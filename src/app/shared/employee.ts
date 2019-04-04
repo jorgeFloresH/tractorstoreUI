@@ -1,13 +1,9 @@
-import {Comment} from './comment';
-
-export class Item {
+export class Employee {
   id: number;
-  featured: boolean;
   name: string;
   image: string;
-  category: string;
-  label: string;
-  price: string;
-  description: string;
-  comments: Comment[];
+  jobPosition: string;
+  jobCode: string;
+  featured: boolean;
+  jobDescription: string;
 }

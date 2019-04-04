@@ -1,25 +1,25 @@
 import {Injectable} from '@angular/core';
-import {Item} from '../shared/item';
-import {ITEMS} from '../shared/items';
+import {Employee} from '../shared/employee';
+import {EMPLOYEES} from '../shared/employees';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ItemService {
+export class EmployeeService {
 
   constructor() {
   }
 
-  getItems(): Item[] {
-    return ITEMS;
+  getEmployees(): Employee[] {
+    return EMPLOYEES;
   }
 
-  getItem(id: number): Item {
-    return ITEMS.filter(item => item.id === id)[0];
+  getEmployee(id: number): Employee {
+    return EMPLOYEES.filter(employee => employee.id === id)[0];
   }
 
-  getFeaturedItem(): Item {
-    return ITEMS.filter((item) => item.featured)[0];
+  getFeaturedEmployee(): Employee {
+    return EMPLOYEES.filter((employee) => employee.featured)[0];
   }
 
 }

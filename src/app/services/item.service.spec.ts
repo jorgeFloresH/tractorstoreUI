@@ -1,6 +1,9 @@
 import {inject, TestBed} from '@angular/core/testing';
 
 import {ItemService} from './item.service';
+// @ts-ignore
+// @ts-ignore
+import {beforeEach, describe, expect, it} from 'jasmine';
 
 describe('ItemService', () => {
   beforeEach(() => {

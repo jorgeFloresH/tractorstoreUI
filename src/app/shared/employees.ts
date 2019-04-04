@@ -1,172 +1,45 @@
-import {Item} from './item';
+import {Employee} from './employee';
 
-export const ITEMS: Item[] = [
+export const EMPLOYEES: Employee[] = [
   {
     id: 0,
+    name: 'TractorStore',
+    image: '/assets/images/portada.jpg',
+    jobPosition: 'Chief Enterprise Officer',
+    jobCode: 'CEO',
     featured: true,
-    name: 'Helmet',
-    image: '/assets/images/helmet.jpg',
-    category: 'safety',
-    label: 'ultra safe',
-    price: '4.99',
-    description: 'Un casco de seguridad útil para proteger en ámbitos como la construcción, fabricas y otros',
-    comments: [
-      {
-        rating: 5,
-        comment: 'Imagine all safety PPE in SSI!',
-        author: 'Mr T',
-        date: '2012-10-16T17:57:28.556094Z'
-      },
-      {
-        rating: 4,
-        comment: 'Gives me a lot of confort, I wish I could get my mother-in-law to have it!',
-        author: 'Tania Barrancos',
-        date: '2014-09-05T17:57:28.556094Z'
-      },
-      {
-        rating: 3,
-        comment: 'Use it, just use it!',
-        author: 'Michael Rodriguez',
-        date: '2015-02-13T17:57:28.556094Z'
-      },
-      {
-        rating: 4,
-        comment: 'Ultimate, Reaching for the stars!',
-        author: 'Diana Cardozo',
-        date: '2013-12-02T17:57:28.556094Z'
-      },
-      {
-        rating: 2,
-        comment: 'It is simply very nice!',
-        author: '50 Cent',
-        date: '2011-12-02T17:57:28.556094Z'
-      }
-    ]
+    jobDescription: 'Somos una empresa con más de 20 años de experiencia en dar soluciones mecánicas a problemas del agro.'
   },
   {
     id: 1,
+    name: 'Ben Affleck',
+    image: '/assets/images/ben.jpg',
+    jobPosition: 'Chief Technology Officer',
+    jobCode: 'CTO',
     featured: false,
-    name: 'Audio protector',
-    image: '/assets/images/audio.jpg',
-    category: 'safety',
-    label: 'noise filter',
-    price: '12.99',
-    description: 'Protege de ruidos auditivos por encima de los decibeles considerados aceptables',
-    comments: [
-      {
-        rating: 5,
-        comment: 'Imagine all safety PPE in SSI!',
-        author: 'Mr T',
-        date: '2012-10-16T17:57:28.556094Z'
-      },
-      {
-        rating: 5,
-        comment: 'Gives me a lot of confort, I wish I could get my mother-in-law to have it!',
-        author: 'Tania Barrancos',
-        date: '2014-09-05T17:57:28.556094Z'
-      },
-      {
-        rating: 3,
-        comment: 'Use it, just use it!',
-        author: 'Michael Rodriguez',
-        date: '2015-02-13T17:57:28.556094Z'
-      },
-      {
-        rating: 4,
-        comment: 'Ultimate, Reaching for the stars!',
-        author: 'Diana Cardozo',
-        date: '2013-12-02T17:57:28.556094Z'
-      },
-      {
-        rating: 2,
-        comment: 'It is simply very nice!',
-        author: '50 Cent',
-        date: '2011-12-02T17:57:28.556094Z'
-      }
-    ]
+    jobDescription: 'El CTO, tiene la function de garantizar la calidad de los productos de software cuidando que los recursos utiliados ' +
+      'sean adecuados en terminos de tiempo, costo y recurso, de manera que la satisfaccion del cliente este asegurada.'
   },
   {
     id: 2,
+    name: 'Gal Gadot',
+    image: '/assets/images/gal.jpg',
+    jobPosition: 'Software Lead',
+    jobCode: 'CTO',
     featured: false,
-    name: 'Glasses',
-    image: '/assets/images/glasses.jpg',
-    category: 'safety',
-    label: 'New technology',
-    price: '31.99',
-    description: 'Permite filtrar rayos ultravioleta, material anti rayas, anti caidas',
-    comments: [
-      {
-        rating: 5,
-        comment: 'Imagine all safety PPE in SSI!',
-        author: 'Mr T',
-        date: '2012-10-16T17:57:28.556094Z'
-      },
-      {
-        rating: 5,
-        comment: 'Gives me a lot of confort, I wish I could get my mother-in-law to have it!',
-        author: 'Tania Barrancos',
-        date: '2014-09-05T17:57:28.556094Z'
-      },
-      {
-        rating: 3,
-        comment: 'Use it, just use it!',
-        author: 'Michael Rodriguez',
-        date: '2015-02-13T17:57:28.556094Z'
-      },
-      {
-        rating: 4,
-        comment: 'Ultimate, Reaching for the stars!',
-        author: 'Diana Cardozo',
-        date: '2013-12-02T17:57:28.556094Z'
-      },
-      {
-        rating: 2,
-        comment: 'It is simply very nice!',
-        author: '50 Cent',
-        date: '2011-12-02T17:57:28.556094Z'
-      }
-    ]
+    jobDescription: 'Tiene la function de dirigir los projectos de software garantizando que se utilice adecuadamente la major ' +
+      'tecnologia disponible, y tambien debe garantizar la calidad de todo el equipo del projecto'
   },
   {
     id: 3,
+    name: 'Amy Adams',
+    image: '/assets/images/amy.jpg',
+    jobPosition: 'Executive User Experience Chef',
+    jobCode: 'EC',
     featured: false,
-    name: 'Gloves',
-    image: '/assets/images/gloves.jpg',
-    category: 'safety',
-    label: '',
-    price: '12.99',
-    description: 'Hechos de algodón con goma antideslizante, especial para industria química.',
-    comments: [
-      {
-        rating: 5,
-        comment: 'Imagine all safety PPE in SSI!',
-        author: 'Mr T',
-        date: '2012-10-16T17:57:28.556094Z'
-      },
-      {
-        rating: 5,
-        comment: 'Gives me a lot of confort, I wish I could get my mother-in-law to have it!',
-        author: 'Tania Barrancos',
-        date: '2014-09-05T17:57:28.556094Z'
-      },
-      {
-        rating: 3,
-        comment: 'Use it, just use it!',
-        author: 'Michael Rodriguez',
-        date: '2015-02-13T17:57:28.556094Z'
-      },
-      {
-        rating: 4,
-        comment: 'Ultimate, Reaching for the stars!',
-        author: 'Diana Cardozo',
-        date: '2013-12-02T17:57:28.556094Z'
-      },
-      {
-        rating: 2,
-        comment: 'It is simply very nice!',
-        author: '50 Cent',
-        date: '2011-12-02T17:57:28.556094Z'
-      }
-    ]
+    jobDescription: 'Debe garantizar que la experiencia del usuario al estar frente al producto ' +
+      'possible, cuidando que la usabilidad del producto sea maximizada, debe diseñar los flujos proponiendo nuevos procesos ' +
+      'los actuales antes de la implementacion de las '
   }
 ];
+

@@ -27,13 +27,24 @@
   </div>
 
   <div fxFlex="40" *ngIf="item && item.comments">
-    <h1>Comments</h1>
+    <h1>Caracteristicas</h1>
+
     <mat-list>
-      <mat-list-item *ngFor="let comment of item.comments">
-        <p matLine>{{comment.comment}}</p>
-        <p matLine>{{comment.rating}} Stars</p>
-        <p matLine>-- {{comment.author}} {{comment.date | date}}</p>
-      </mat-list-item>
+      <!--<mat-list-item *ngFor="let comment of item.comments">-->
+      <p matLine>Nombre:{{item.name}}</p>
+      <p matLine>Categoria:{{item.category}}</p>
+      <p matLine>Descripcion:{{item.description}}</p>
+      <p matLine>Precio:{{item.price}}</p>
+      <!--<p matLine>&#45;&#45; {{comment.author}} {{comment.date | date}}</p>-->
+      <!--</mat-list-item>-->
     </mat-list>
+    <!--<mat-grid-list [cols]="2" bind-rowHeight="'200px'" [gutterSize]="'10px'">-->
+    <!--<mat-grid-tile *ngFor="let comment of item.comments" >-->
+    <!--<img height="200px" src={{comment.author}} alt={{item.name}}>-->
+    <!--<mat-grid-tile-footer>-->
+    <!--<h1 mat-line>{{item.name | uppercase}}</h1>-->
+    <!--</mat-grid-tile-footer>-->
+    <!--</mat-grid-tile>-->
+    <!--</mat-grid-list>-->
   </div>
 </div>
